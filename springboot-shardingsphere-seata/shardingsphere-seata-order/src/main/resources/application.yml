@@ -7,7 +7,7 @@ server:
 
 dubbo:
   registry:
-    address: nacos://127.0.0.1:8848
+    address: nacos://192.168.1.119:8848
   application:
     name: shardingsphere-seata-nacos-dubbo-provider-order
     qos-enable: false
@@ -33,7 +33,7 @@ spring:
   cloud:
     nacos:
       discovery:
-        server-addr: 127.0.0.1:8848
+        server-addr: 192.168.1.119:8848
   shardingsphere:
     datasource:
       names: ds0,ds1
@@ -43,8 +43,8 @@ spring:
         driver-class-name: com.mysql.jdbc.Driver
         username: root
         password: 123456
-        jdbc-url: jdbc:mysql://localhost:3306/demo_ds_0?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
-        url: jdbc:mysql://localhost:3306/demo_ds_0?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
+        jdbc-url: jdbc:mysql://192.168.1.119:3306/demo_ds_0?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
+        url: jdbc:mysql://192.168.1.119:3306/demo_ds_0?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
         filters: stat,wall,log4j
         maxActive: 20
         initialSize: 1
@@ -65,8 +65,8 @@ spring:
         driver-class-name: com.mysql.jdbc.Driver
         username: root
         password: 123456
-        jdbc-url: jdbc:mysql://localhost:3306/demo_ds_1?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
-        url: jdbc:mysql://localhost:3306/demo_ds_1?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
+        jdbc-url: jdbc:mysql://192.168.1.119:3306/demo_ds_1?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
+        url: jdbc:mysql://192.168.1.119:3306/demo_ds_1?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
         filters: stat,wall,log4j
         maxActive: 20
         initialSize: 1

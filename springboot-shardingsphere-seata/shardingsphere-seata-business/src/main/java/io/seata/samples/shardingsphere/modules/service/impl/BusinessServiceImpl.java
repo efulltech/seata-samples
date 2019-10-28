@@ -19,7 +19,7 @@ public class BusinessServiceImpl implements IBusinessService {
     @Override
     @GlobalTransactional(name = "dubbo-purchase")
     public void purchase(){
-        TransactionTypeHolder.set(TransactionType.BASE);
+//        TransactionTypeHolder.set(TransactionType.BASE);
         OrderEntity orderEntity = new OrderEntity();
         orderEntity.setOrderId(123);
         orderEntity.setStatus("seata");
